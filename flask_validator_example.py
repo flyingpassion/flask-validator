@@ -25,13 +25,9 @@ rules_example = {
 }
 
 
-
-
-
 @app.route("/wrap", methods=["GET", "POST", "PUT"])
 @validator(rules=rules_example, strip=True)  # 姿势 1:只能检测是否符合规则,不能修改参数,不符合就会直接返回json给调用者
 def wrap_example(data):
-
     return jsonify({"code": 200, "data": data, "err": ""})
 
 
