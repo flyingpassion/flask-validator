@@ -17,8 +17,6 @@ students = [
 ]
 
 
-
-
 from operator import itemgetter, attrgetter
 
 # 对students按照年龄排序
